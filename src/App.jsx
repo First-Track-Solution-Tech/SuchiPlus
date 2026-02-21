@@ -1,24 +1,29 @@
+import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Signin from "./Pages/Signin";
-import Register from "./Pages/Register";
-import Navbar from "./component/Navbar";
-import Hero from "./component/Hero";
-import TrendingSection from "./component/TrendingSection";
-import FaqSection from "./component/FaqSection";
-import Footer from "./component/Footer"; 
-
+import Home from "./Pages/Home";
+import Signin from "./Pages/signin";
+import Register from "./Pages/register";
+import MainLayout from "./layouts/Mainlayouts";
+import About from "./Pages/about";
+import "./index.css";
+import "./App.css";
+import Search from "./Pages/Search";
 function App() {
   return (
     <div className="bg-black text-white">
-      <Navbar />
+
       <Routes>
+        <Route path="/" element={<MainLayout />}>    
+        <Route index element={<Home />} />
+        <Route path="/Search" element={<Search />} />
+
         <Route path="/Signin" element={<Signin />} />
         <Route path="/Register" element={<Register />} />
-      </Routes>
-      <Hero />
-      <TrendingSection />
-      <FaqSection />
-      <Footer/>
+        <Route path="/About" elemrnt={<About/>}/>
+
+       </Route>  
+       </Routes>
+      
 
     </div>
   );
