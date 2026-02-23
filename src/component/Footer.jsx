@@ -10,7 +10,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-    <Link to="/about" className="hover:text-gray-400">
+    <Link to="/About" className="hover:text-gray-400">
       About
     </Link>
   </li>
@@ -28,19 +28,20 @@ const Footer = () => {
   </li>
             </ul>
           </div>
+
           <div>
             <h3 className="text-lg font-semibold mb-4">Support</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-gray-400">Help Center</a></li>
-              <li><a href="#" className="hover:text-gray-400">FAQs</a></li>
-              <li><a href="#" className="hover:text-gray-400">Terms of Service</a></li>
+              <li><Link to="/HelpCenter" className="hover:text-gray-400">Help Center</Link></li>
+              <li><Link to="/FAQ" className="hover:text-gray-400">FAQs</Link></li>
+              <li><Link to="/TermsOfService" className="hover:text-gray-400">Terms of Service</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4">Legal</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-gray-400">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-gray-400">Cookie Policy</a></li>
+              <li><Link to="/PrivacyPolicy" className="hover:text-gray-400">Privacy Policy</Link></li>
+              <li><Link to="/CookiePolicy" className="hover:text-gray-400">Cookie Policy</Link></li>
             </ul>
           </div>
           <div>
