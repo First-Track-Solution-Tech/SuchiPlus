@@ -11,7 +11,6 @@ const Navbar = () => {
         SUCHIPLUS
       </h1>
 
-      {/* Right Side */}
       <div className="flex items-center gap-3 md:gap-5">
 
         {/* Home Icon */}
