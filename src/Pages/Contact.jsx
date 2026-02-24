@@ -74,7 +74,7 @@ const Contact = () => {
       </div>
 
       <p className="text-center text-gray-400 mt-8">
-        Email: support@netplus.com | Phone: +91 1234567890
+        Email: support@suchiplus.com | Phone: +91 1234567890
       </p>
     </div>
   );

@@ -59,21 +59,21 @@ const HelpCenter = () => {
 
       {/* Support Section */}
       <div className="mt-20 text-center">
-        <h2 className="text-2xl font-bold mb-3">
+        <h2 className="text-2xl font-bold mb-4">
           Still Need Help?
         </h2>
         <p className="text-gray-400 mb-6">
           Our support team is available 24/7 to assist you.
         </p>
 
-        <Link To="/Contact" className="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+        <Link to="/Contact" className="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700 transition">
           Contact Support
         </Link>
       </div>
 
       {/* Footer */}
       <div className="mt-20 text-center text-gray-500 text-sm border-t border-gray-800 pt-6">
-        © 2026 NETPLUS. All Rights Reserved.
+        © 2026 SuchiPlus. All Rights Reserved.
       </div>
 
     </div>

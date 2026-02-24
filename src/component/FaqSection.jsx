@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
 const faqData = [
-  "What is Netplus?",
-  "How much does Netplus cost?",
+  "What is SuchiPlus?",
+  "How much does SuchiPlus cost?",
   "Where can I watch?",
   "How do I cancel?",
-  "What can I watch on Netplus?",
-  "Is Netplus good for kids?"
+  "What can I watch on SuchiPlus?",
+  "Is SuchiPlus good for kids?"
 ];
 
 const FaqSection = () => {
@@ -33,7 +33,7 @@ const FaqSection = () => {
 
             {open === index && (
               <div className="px-6 py-5 border-t border-gray-600 text-gray-300">
-                This is a Netplus-style FAQ answer section. You can replace
+                This is a SuchiPlus-style FAQ answer section. You can replace
                 this text with real content anytime.
               </div>
             )}

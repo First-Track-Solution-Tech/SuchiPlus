@@ -11,10 +11,10 @@ const About = () => {
 
         <div className="relative z-10">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-4 tracking-wide">
-            About NETPLUS
+            About SuchiPlus
           </h1>
           <p className="max-w-2xl text-gray-300 text-lg md:text-xl">
-            NETPLUS is your ultimate destination for streaming the best movies
+            SuchiPlus is your ultimate destination for streaming the best movies
             and series from around the world. Entertainment redefined.
           </p>
         </div>
@@ -48,6 +48,7 @@ const About = () => {
               className="w-24 h-24 mx-auto rounded-full mb-4 object-cover"
             />
             <h3 className="text-xl font-semibold">Rahul Sharma</h3>
+   
             <p className="text-gray-400 text-sm">Founder & CEO</p>
           </div>
 
@@ -78,7 +79,7 @@ const About = () => {
 
       {/* Footer Section */}
       <div className="py-8 text-center border-t border-gray-800 text-gray-500 text-sm">
-        © 2026 NETPLUS. All Rights Reserved.
+        © 2026 SuchiPlus. All Rights Reserved.
       </div>
 
     </div>

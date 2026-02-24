@@ -8,7 +8,7 @@ const Navbar = () => {
       
       {/* Logo */}
       <h1 className="text-blue-500 text-3xl md:text-5xl font-extrabold">
-        SUCHI+
+        SUCHIPLUS
       </h1>
 
       {/* Right Side */}

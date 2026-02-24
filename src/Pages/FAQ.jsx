@@ -5,9 +5,9 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: "What is NETPLUS?",
+      question: "What is SuchiPlus?",
       answer:
-        "NETPLUS is an online streaming platform where you can watch movies and series anytime, anywhere.",
+        "SuchiPlus is an online streaming platform where you can watch movies and series anytime, anywhere.",
     },
     {
       question: "How can I subscribe?",
@@ -20,14 +20,14 @@ const FAQ = () => {
         "Yes, you can cancel your subscription at any time from your account settings.",
     },
     {
-      question: "Is NETPLUS available on mobile?",
+      question: "Is SuchiPlus available on mobile?",
       answer:
-        "Yes, NETPLUS is available on mobile, tablet, and desktop devices.",
+        "Yes, SuchiPlus is available on mobile, tablet, and desktop devices.",
     },
     {
       question: "How do I contact support?",
       answer:
-        "You can contact our support team through the Contact page or email us at support@netplus.com.",
+        "You can contact our support team through the Contact page or email us at support@SuchiPlus.com.",
     },
   ];
 
@@ -68,7 +68,7 @@ const FAQ = () => {
       </div>
 
       <div className="text-center text-gray-400 mt-16 text-sm">
-        © 2026 NETPLUS. All Rights Reserved.
+        © 2026 SuchiPlus. All Rights Reserved.
       </div>
     </div>
   );
