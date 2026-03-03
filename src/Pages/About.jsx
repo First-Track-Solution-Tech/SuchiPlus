@@ -1,13 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const About = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white">
 
       {/* Hero Section */}
-      <div className="h-[60vh] flex flex-col justify-center items-center text-center px-6 bg-[url('/images/movie1.png')] bg-cover bg-center relative">
-        <div className="absolute inset-0 bg-black bg-opacity-70"></div>
+      <div
+        className="h-[100vh] flex flex-col justify-center items-center text-center px-6 relative bg-cover bg-center"
+        style={{ backgroundImage: "url('/images/AboutBanner.png')" }}
+      >
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/50"></div>
 
         <div className="relative z-10">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-4 tracking-wide">
@@ -40,44 +43,40 @@ const About = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           
-          {/* Card 1 */}
           <div className="bg-gray-800 rounded-xl p-6 text-center hover:scale-105 transition duration-300 shadow-lg">
             <img
               src="/images/movie2.png"
               alt="Founder"
               className="w-24 h-24 mx-auto rounded-full mb-4 object-cover"
             />
-            <h3 className="text-xl font-semibold">Rahul Sharma</h3>
-   
+            <h3 className="text-xl font-semibold">Sheetal</h3>
             <p className="text-gray-400 text-sm">Founder & CEO</p>
           </div>
 
-          {/* Card 2 */}
           <div className="bg-gray-800 rounded-xl p-6 text-center hover:scale-105 transition duration-300 shadow-lg">
             <img
               src="/images/movie3.png"
               alt="Developer"
               className="w-24 h-24 mx-auto rounded-full mb-4 object-cover"
             />
-            <h3 className="text-xl font-semibold">Priya Verma</h3>
+            <h3 className="text-xl font-semibold">Suchi</h3>
             <p className="text-gray-400 text-sm">Lead Developer</p>
           </div>
 
-          {/* Card 3 */} 
           <div className="bg-gray-800 rounded-xl p-6 text-center hover:scale-105 transition duration-300 shadow-lg">
             <img
               src="/images/movie4.png"
               alt="Designer"
               className="w-24 h-24 mx-auto rounded-full mb-4 object-cover"
             />
-            <h3 className="text-xl font-semibold">Aman Gupta</h3>
+            <h3 className="text-xl font-semibold">Riya Patel</h3>
             <p className="text-gray-400 text-sm">UI/UX Designer</p>
           </div>
 
         </div>
       </div>
 
-      {/* Footer Section */}
+      {/* Footer */}
       <div className="py-8 text-center border-t border-gray-800 text-gray-500 text-sm">
         © 2026 SuchiPlus. All Rights Reserved.
       </div>

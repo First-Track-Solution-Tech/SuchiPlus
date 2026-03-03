@@ -1,10 +1,8 @@
 import React from "react";
-import { Route } from "react-router-dom";
 
 const TermsOfService = () => {
-
   return (
-    <div className="min-h-screenbg-gradient-to-br from-black to-blue-900 px-6 py-16">
+    <div className="min-h-screen bg-gradient-to-r from-indigo-900 via-black to-blue-800 px-6 py-16">
       <div className="max-w-5xl mx-auto">
         
         {/* Header Section */}
@@ -66,6 +64,5 @@ const TermsOfService = () => {
     </div>
   );
 };
-
 
 export default TermsOfService;
