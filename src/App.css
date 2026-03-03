@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@layer utilities {
+  .bg-netflix {
+    background-color: #301086;
+  }
+}

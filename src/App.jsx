@@ -1,24 +1,44 @@
+import React from "react";
 import { Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
 import Signin from "./Pages/Signin";
 import Register from "./Pages/Register";
-import Navbar from "./component/Navbar";
-import Hero from "./component/Hero";
-import TrendingSection from "./component/TrendingSection";
-import FaqSection from "./component/FaqSection";
-import Footer from "./component/Footer"; 
+import MainLayout from "./Layouts/MainLayouts";
+import Search from "./Pages/Search";
 
+import About from "./Pages/About";
+import Blog from "./Pages/Blog";
+import Contact from "./Pages/Contact";
+import FAQ from "./Pages/FAQ";
+import HelpCenter from "./Pages/HelpCenter";
+import TermsOfService from "./Pages/TermsOfService";
+import PrivacyPolicy from "./Pages/PrivacyPolice";
+import CookiesPolicy from "./Pages/CookiePolicy";
+import "./index.css";
+import "./App.css";
 function App() {
   return (
     <div className="bg-black text-white">
-      <Navbar />
+
       <Routes>
+        <Route path="/" element={<MainLayout />}>    
+        <Route index element={<Home />} />
+        <Route path="/Search" element={<Search />} />
+
         <Route path="/Signin" element={<Signin />} />
         <Route path="/Register" element={<Register />} />
-      </Routes>
-      <Hero />
-      <TrendingSection />
-      <FaqSection />
-      <Footer/>
+        <Route path="/About" element={<About />} />
+        <Route path="/Blog" element={<Blog />} />
+        <Route path="/Contact" element={<Contact />} />
+        <Route path="/FAQ" element={<FAQ />} />
+        <Route path="/HelpCenter" element={<HelpCenter />} />
+        <Route path="/TermsOfService" element={<TermsOfService />} />
+        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+        <Route path="/CookiePolicy" element={<CookiesPolicy />} />
+
+       </Route>  
+       </Routes>
+      
 
     </div>
   );
