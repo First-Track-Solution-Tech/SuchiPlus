@@ -2,11 +2,11 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Signin from "./Pages/Signin";
-import Register from "./Pages/register";
+import Register from "./Pages/Register";
 import MainLayout from "./layouts/Mainlayouts";
 import Search from "./Pages/Search";
 
-import About from "./Pages/about";
+import About from "./Pages/About";
 import Blog from "./Pages/Blog";
 import Contact from "./Pages/Contact";
 import FAQ from "./Pages/FAQ";
