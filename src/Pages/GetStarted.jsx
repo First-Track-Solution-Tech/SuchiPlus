@@ -4,7 +4,6 @@ const GetStarted = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-900 via-black to-indigo-900 px-4">
 
-      {/* Card */}
       <div className="bg-black/80 backdrop-blur-md text-white rounded-2xl shadow-2xl w-full max-w-md p-8">
 
         {/* Logo */}
