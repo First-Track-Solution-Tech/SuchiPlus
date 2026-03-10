@@ -29,7 +29,7 @@ const Navbar = () => {
         SUCHIPLUS
       </h1>
 
-      {/* Desktop Menu */}
+
       <div className="hidden md:flex items-center gap-7">
 
         <Link to="/" className="text-white hover:text-blue-400 transition text-lg">
