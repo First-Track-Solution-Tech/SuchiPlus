@@ -94,7 +94,6 @@ const Register = () => {
             className="w-full p-3 mb-4 bg-gray-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
 
-          {/* Email */}
           <input
             type="email"
             name="email"
