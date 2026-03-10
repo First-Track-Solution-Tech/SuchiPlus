@@ -24,7 +24,6 @@ const HelpCenter = () => {
         How can we help you today?
       </p>
 
-      {/* Search Box */}
       <div className="flex justify-center mb-14">
         <input
           type="text"
