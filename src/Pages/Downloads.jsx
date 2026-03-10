@@ -35,7 +35,7 @@ const Downloads = () => {
           </p>
 
           {/* Features */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-11 text-sm">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10 text-sm">
 
             <div className="bg-gradient-to-br from-gray-800 to-gray-900 
             p-5 rounded-xl border border-gray-700 hover:border-blue-500 

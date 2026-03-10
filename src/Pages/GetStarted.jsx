@@ -12,12 +12,10 @@ const GetStarted = () => {
           SuchiPlus
         </h1>
 
-        {/* Step */}
         <p className="text-sm text-gray-400 text-center mb-4">
           Step 1 of 3
         </p>
 
-        {/* Heading */}
         <h2 className="text-2xl font-semibold text-center mb-2">
           Welcome Back 👋
         </h2>
