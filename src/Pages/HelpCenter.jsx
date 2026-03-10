@@ -54,7 +54,6 @@ const HelpCenter = () => {
           ))}
       </div>
 
-      {/* Support Section */}
       <div className="mt-20 text-center">
         <h2 className="text-2xl font-bold mb-4">
           Still Need Help?
