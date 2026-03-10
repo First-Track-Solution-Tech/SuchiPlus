@@ -1,29 +1,58 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Register = () => {
   const navigate = useNavigate();
 
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+
+  const [countryCode, setCountryCode] = useState("+91");
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     password: "",
     confirmPassword: "",
   });
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    const { name, value } = e.target;
+
+    if (name === "phone") {
+      const number = value.replace(/\D/g, "").slice(0, 10);
+
+      setFormData({
+        ...formData,
+        phone: number,
+      });
+    } else {
+      setFormData({
+        ...formData,
+        [name]: value,
+      });
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!formData.name || !formData.email || !formData.password || !formData.confirmPassword) {
+    if (
+      !formData.name ||
+      !formData.email ||
+      !formData.phone ||
+      !formData.password ||
+      !formData.confirmPassword
+    ) {
       alert("Please fill all fields");
+      return;
+    }
+
+    if (formData.phone.length < 6) {
+      alert("Enter valid phone number");
       return;
     }
 
@@ -31,6 +60,10 @@ const Register = () => {
       alert("Passwords do not match");
       return;
     }
+
+    const fullPhone = `${countryCode}${formData.phone}`;
+
+    console.log("Full Phone:", fullPhone);
 
     alert("Registration Successful");
     navigate("/signin");
@@ -43,15 +76,15 @@ const Register = () => {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-black to-blue-900">
-      
       <div className="bg-gray-800 p-8 rounded-lg w-full max-w-md shadow-lg">
 
-        <h2 className="text-white text-2xl font-bold mb-6 text-center">
+        <h2 className="text-white text-2xl font-bold mb-4 text-center">
           Register
         </h2>
 
-        {/* Register Form */}
         <form onSubmit={handleSubmit}>
+
+          {/* Name */}
           <input
             type="text"
             name="name"
@@ -61,33 +94,88 @@ const Register = () => {
             className="w-full p-3 mb-4 bg-gray-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
 
+          {/* Email */}
           <input
             type="email"
             name="email"
-            placeholder="Email"
+            placeholder="Email Address"
             value={formData.email}
             onChange={handleChange}
             className="w-full p-3 mb-4 bg-gray-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
 
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            value={formData.password}
-            onChange={handleChange}
-            className="w-full p-3 mb-4 bg-gray-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
+          {/* Phone with Country Code */}
+          <div className="flex mb-4">
 
-          <input
-            type="password"
-            name="confirmPassword"
-            placeholder="Confirm Password"
-            value={formData.confirmPassword}
-            onChange={handleChange}
-            className="w-full p-3 mb-4 bg-gray-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
+            <select
+              value={countryCode}
+              onChange={(e) => setCountryCode(e.target.value)}
+              className="bg-gray-700 text-white p-3 rounded-l focus:outline-none"
+            >
+              <option value="+91">🇮🇳 +91</option>
+              <option value="+1">🇺🇸 +1</option>
+              <option value="+44">🇬🇧 +44</option>
+              <option value="+61">🇦🇺 +61</option>
+              <option value="+81">🇯🇵 +81</option>
+              <option value="+49">🇩🇪 +49</option>
+              <option value="+33">🇫🇷 +33</option>
+              <option value="+86">🇨🇳 +86</option>
+              <option value="+971">🇦🇪 +971</option>
+              <option value="+880">🇧🇩 +880</option>
+            </select>
 
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
+              value={formData.phone}
+              onChange={handleChange}
+              className="w-full p-3 bg-gray-700 text-white rounded-r focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+
+          </div>
+
+          {/* Password */}
+          <div className="relative mb-4">
+            <input
+              type={showPassword ? "text" : "password"}
+              name="password"
+              placeholder="Password"
+              value={formData.password}
+              onChange={handleChange}
+              className="w-full p-3 bg-gray-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+
+            <span
+              onClick={() => setShowPassword(!showPassword)}
+              className="absolute right-3 top-3 text-gray-300 cursor-pointer"
+            >
+              {showPassword ? <FaEyeSlash /> : <FaEye />}
+            </span>
+          </div>
+
+          {/* Confirm Password */}
+          <div className="relative mb-4">
+            <input
+              type={showConfirmPassword ? "text" : "password"}
+              name="confirmPassword"
+              placeholder="Confirm Password"
+              value={formData.confirmPassword}
+              onChange={handleChange}
+              className="w-full p-3 bg-gray-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+
+            <span
+              onClick={() =>
+                setShowConfirmPassword(!showConfirmPassword)
+              }
+              className="absolute right-3 top-3 text-gray-300 cursor-pointer"
+            >
+              {showConfirmPassword ? <FaEyeSlash /> : <FaEye />}
+            </span>
+          </div>
+
+          {/* Register Button */}
           <button
             type="submit"
             className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded font-semibold transition duration-300"

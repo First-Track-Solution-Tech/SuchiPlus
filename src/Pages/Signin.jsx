@@ -6,7 +6,7 @@ const Signin = () => {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
-    email: "",
+    emailOrPhone: "",
     password: "",
   });
 
@@ -20,7 +20,7 @@ const Signin = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (formData.email && formData.password) {
+    if (formData.emailOrPhone && formData.password) {
       alert("Login Successful");
       navigate("/");
     } else {
@@ -42,32 +42,47 @@ const Signin = () => {
           Sign In
         </h2>
 
-        {/* Email Login */}
+        {/* Login Form */}
         <form onSubmit={handleSubmit}>
+
+          {/* Email or Phone */}
           <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            value={formData.email}
+            type="text"
+            name="emailOrPhone"
+            placeholder="Email or Phone "
+            value={formData.emailOrPhone}
             onChange={handleChange}
             className="w-full p-3 mb-4 bg-gray-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
 
+          {/* Password */}
           <input
             type="password"
             name="password"
             placeholder="Password"
             value={formData.password}
             onChange={handleChange}
-            className="w-full p-3 mb-4 bg-gray-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-3 mb-2 bg-gray-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
 
+          {/* Forgot Password */}
+          <div className="text-right mb-4">
+            <Link
+              to="/forgot-password"
+              className="text-sm text-blue-400 hover:underline"
+            >
+              Forgot Password?
+            </Link>
+          </div>
+
+          {/* Signin Button */}
           <button
             type="submit"
             className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded font-semibold transition duration-300"
           >
             Sign In
           </button>
+
         </form>
 
         {/* Divider */}
