@@ -69,8 +69,7 @@ const HelpCenter = () => {
 
       {/* Footer */}
       <div className="mt-20 text-center text-gray-500 text-sm border-t border-gray-800 pt-6">
-        © 2026 SuchiPlus. All Rights Reserved.
-      </div>
+© SuchiPlus, Copyright ©2026, First Track Solution Technologies. All rights reserved      </div>
 
     </div>
   );

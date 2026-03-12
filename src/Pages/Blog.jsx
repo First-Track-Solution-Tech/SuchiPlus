@@ -8,28 +8,28 @@ const Blog = () => {
       id: 1,
       title: "Inside SuchiPlus Streaming Technology",
       desc: "Discover the technology that powers smooth and high quality streaming.",
-      image: "/images/movie1.png",
+      image: "/images/Blog1.jpg",
       category: "Technology"
     },
     {
       id: 2,
       title: "Top Movies Everyone Is Watching",
       desc: "Explore the most watched movies on SuchiPlus this month.",
-      image: "/images/movie2.png",
+      image: "/images/Blog2.jpg",
       category: "Movies"
     },
     {
       id: 3,
       title: "Meet Our Development Team",
       desc: "A behind the scenes look at the people building SuchiPlus.",
-      image: "/images/movie3.png",
+      image: "/images/Blog3.jpg",
       category: "Interview"
     },
     {
       id: 4,
       title: "Designing the SuchiPlus Experience",
       desc: "How our UI/UX team builds a simple and elegant experience.",
-      image: "/images/movie4.png",
+      image: "/images/Blog4.jpg",
       category: "Design"
     }
   ];
@@ -95,12 +95,12 @@ const Blog = () => {
           <div className="relative rounded-2xl overflow-hidden group">
 
             <img
-              src="/images/banner_bg.png"
+              src="/images/BlogBanner.jpg"
               alt="featured"
               className="w-full h-[350px] object-cover group-hover:scale-110 transition duration-500"
             />
 
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
 
             <div className="absolute bottom-8 left-8 max-w-lg">
               <h2 className="text-3xl font-bold mb-2">
@@ -163,8 +163,7 @@ const Blog = () => {
 
       {/* Footer */}
       <div className="mt-20 text-center text-gray-500 text-sm border-t border-gray-800 pt-6 pb-10">
-        © 2026 SuchiPlus. All Rights Reserved.
-      </div>
+© SuchiPlus, Copyright ©2026, First Track Solution Technologies. All rights reserved      </div>
 
     </div>
   );

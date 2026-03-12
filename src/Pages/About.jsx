@@ -76,8 +76,7 @@ const About = () => {
 
       {/* Footer */}
       <div className="py-8 text-center border-t border-gray-800 text-gray-500 text-sm">
-        © 2026 SuchiPlus. All Rights Reserved.
-      </div>
+© SuchiPlus, Copyright ©2026, First Track Solution Technologies. All rights reserved      </div>
 
     </div>
   );

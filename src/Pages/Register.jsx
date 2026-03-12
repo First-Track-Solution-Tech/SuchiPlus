@@ -8,13 +8,12 @@ const Register = () => {
 
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
-
   const [countryCode, setCountryCode] = useState("+91");
 
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
     phone: "",
+    email: "",
     password: "",
     confirmPassword: "",
   });
@@ -24,7 +23,6 @@ const Register = () => {
 
     if (name === "phone") {
       const number = value.replace(/\D/g, "").slice(0, 10);
-
       setFormData({
         ...formData,
         phone: number,
@@ -42,8 +40,8 @@ const Register = () => {
 
     if (
       !formData.name ||
-      !formData.email ||
       !formData.phone ||
+      !formData.email ||
       !formData.password ||
       !formData.confirmPassword
     ) {
@@ -62,7 +60,6 @@ const Register = () => {
     }
 
     const fullPhone = `${countryCode}${formData.phone}`;
-
     console.log("Full Phone:", fullPhone);
 
     alert("Registration Successful");
@@ -94,18 +91,8 @@ const Register = () => {
             className="w-full p-3 mb-4 bg-gray-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
 
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            value={formData.email}
-            onChange={handleChange}
-            className="w-full p-3 mb-4 bg-gray-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
-          />
-
-          {/* Phone with Country Code */}
+          {/* Phone Number */}
           <div className="flex mb-4">
-
             <select
               value={countryCode}
               onChange={(e) => setCountryCode(e.target.value)}
@@ -131,8 +118,17 @@ const Register = () => {
               onChange={handleChange}
               className="w-full p-3 bg-gray-700 text-white rounded-r focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
-
           </div>
+
+          {/* Email */}
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={formData.email}
+            onChange={handleChange}
+            className="w-full p-3 mb-4 bg-gray-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
 
           {/* Password */}
           <div className="relative mb-4">
@@ -165,9 +161,7 @@ const Register = () => {
             />
 
             <span
-              onClick={() =>
-                setShowConfirmPassword(!showConfirmPassword)
-              }
+              onClick={() => setShowConfirmPassword(!showConfirmPassword)}
               className="absolute right-3 top-3 text-gray-300 cursor-pointer"
             >
               {showConfirmPassword ? <FaEyeSlash /> : <FaEye />}
@@ -181,6 +175,7 @@ const Register = () => {
           >
             Register
           </button>
+
         </form>
 
         {/* Divider */}

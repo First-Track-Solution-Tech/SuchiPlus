@@ -8,13 +8,16 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto">
 
         {/* Logo - Top Left */}
-        <div className="mb-8">
-          <img
-            src="/images/logo.png"
-            alt="SuchiPlus Logo"
-            className="w-36"
-          />
-        </div>
+        {/* Logo - Top Left */}
+<div className="mb-8">
+  <Link to="/">
+    <img
+      src="/images/Logo3.png"
+      alt="SuchiPlus Logo"
+      className="w-36 cursor-pointer"
+    />
+  </Link>
+</div>
 
         {/* Footer Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -67,7 +70,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="mt-12 text-sm text-gray-500">
-          &copy; {new Date().getFullYear()} SuchiPlus. All rights reserved.
+          &copy;  SuchiPlus, Copyright ©2026, First Track Solution Technologies. All rights reserved
         </div>
 
       </div>
