@@ -1,103 +1,170 @@
 import React from "react";
+import { FaFire, FaArrowRight } from "react-icons/fa";
 
 const Blog = () => {
-  const vlogs = [
+
+  const blogs = [
     {
       id: 1,
-      title: "Behind The Scenes of SuchiPlus",
-      image: "/images/movie1.png",
-      desc: "Explore how we create amazing streaming experiences."
+      title: "Inside SuchiPlus Streaming Technology",
+      desc: "Discover the technology that powers smooth and high quality streaming.",
+      image: "/images/Blog1.jpg",
+      category: "Technology"
     },
     {
       id: 2,
-      title: "Top 10 Movies of 2026",
-      image: "/images/movie2.png",
-      desc: "Check out the most popular movies this year."
+      title: "Top Movies Everyone Is Watching",
+      desc: "Explore the most watched movies on SuchiPlus this month.",
+      image: "/images/Blog2.jpg",
+      category: "Movies"
     },
     {
       id: 3,
-      title: "Interview with Our Developers",
-      image: "/images/movie3.png",
-      desc: "Meet the team behind SuchiPlus platform."
+      title: "Meet Our Development Team",
+      desc: "A behind the scenes look at the people building SuchiPlus.",
+      image: "/images/Blog3.jpg",
+      category: "Interview"
     },
     {
       id: 4,
-      title: "How We Design UI/UX",
-      image: "/images/movie4.png",
-      desc: "A deep dive into our design process."
-    },
-    {
-      id: 5,
-      title: "Streaming Technology Explained",
-      image: "/images/movie5.png",
-      desc: "Learn how streaming works behind the scenes."
-    },
-    {
-      id: 6,
-      title: "Upcoming Features Sneak Peek",
-      image: "/images/movie6.png",
-      desc: "See what exciting features are coming next."
+      title: "Designing the SuchiPlus Experience",
+      desc: "How our UI/UX team builds a simple and elegant experience.",
+      image: "/images/Blog4.jpg",
+      category: "Design"
     }
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-blue-800 to-blue-900 text-white pt-28 px-6">
-      
-      {/* Page Title */}
-      <h1 className="text-4xl font-bold text-center mb-12">
-        SuchiPlus Vlogs
-      </h1>
+    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white pt-24 px-6">
 
-      {/* Featured Vlog */}
-      <div className="max-w-6xl mx-auto mb-16">
-        <div className="relative rounded-xl overflow-hidden shadow-lg">
-          <img
-            src="/images/banner_bg.png"
-            alt="Featured Vlog"
-            className="w-full h-[400px] object-cover"
-          />
-          <div className="absolute inset-0 bg-black/60 flex flex-col justify-center items-center text-center px-6">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Featured Vlog: Inside SuchiPlus
-            </h2>
-            <p className="text-gray-300 max-w-2xl">
-              Take a look at how SuchiPlus works behind the scenes and how we bring
-              entertainment to millions of users.
-            </p>
-            <button className="mt-6 bg-blue-600 px-6 py-3 rounded hover:bg-blue-700 transition">
-              Watch Now ▶
-            </button>
-          </div>
-        </div>
+      {/* Page Title */}
+      <div className="text-center mb-14">
+        <h1 className="text-5xl font-bold mb-3">SuchiPlus Blog</h1>
+        <p className="text-gray-400">Stories, technology and updates from our team</p>
       </div>
 
-      {/* Vlog Grid */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {vlogs.map((vlog) => (
-          <div
-            key={vlog.id}
-            className="bg-gray-900 rounded-lg overflow-hidden hover:scale-105 transition duration-300 shadow-lg cursor-pointer"
-          >
+      <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
+
+        {/* Sidebar */}
+        <div className="md:col-span-1 space-y-6">
+
+          <div className="bg-gray-900 p-6 rounded-xl border border-gray-800">
+            <h3 className="text-xl font-semibold mb-4">Categories</h3>
+
+            <ul className="space-y-3 text-gray-400">
+              <li className="hover:text-blue-400 cursor-pointer">Technology</li>
+              <li className="hover:text-blue-400 cursor-pointer">Movies</li>
+              <li className="hover:text-blue-400 cursor-pointer">Design</li>
+              <li className="hover:text-blue-400 cursor-pointer">Interview</li>
+              <li className="hover:text-blue-400 cursor-pointer">Updates</li>
+            </ul>
+          </div>
+
+          {/* Trending */}
+          <div className="bg-gray-900 p-6 rounded-xl border border-gray-800">
+
+            <div className="flex items-center gap-2 mb-4 text-orange-400">
+              <FaFire />
+              <h3 className="text-lg font-semibold">Trending</h3>
+            </div>
+
+            <ul className="space-y-4 text-sm text-gray-400">
+
+              <li className="hover:text-white cursor-pointer">
+                Why Streaming Platforms Are Growing Fast
+              </li>
+
+              <li className="hover:text-white cursor-pointer">
+                Best Movies Coming in 2026
+              </li>
+
+              <li className="hover:text-white cursor-pointer">
+                Future of Online Entertainment
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        {/* Blog Content */}
+        <div className="md:col-span-3 space-y-10">
+
+          {/* Featured Blog */}
+          <div className="relative rounded-2xl overflow-hidden group">
+
             <img
-              src={vlog.image}
-              alt={vlog.title}
-              className="w-full h-52 object-cover"
+              src="/images/BlogBanner.jpg"
+              alt="featured"
+              className="w-full h-[350px] object-cover group-hover:scale-110 transition duration-500"
             />
-            <div className="p-4">
-              <h3 className="text-xl font-semibold mb-2">{vlog.title}</h3>
-              <p className="text-gray-400 text-sm">{vlog.desc}</p>
-              <button className="mt-4 text-blue-400 hover:underline">
-                Read More →
+
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+
+            <div className="absolute bottom-8 left-8 max-w-lg">
+              <h2 className="text-3xl font-bold mb-2">
+                Behind the Scenes of SuchiPlus
+              </h2>
+
+              <p className="text-gray-300 mb-4">
+                Learn how our engineers and designers build a seamless
+                streaming experience for millions of viewers.
+              </p>
+
+              <button className="flex items-center gap-2 text-blue-400 hover:text-blue-300">
+                Read Story <FaArrowRight />
               </button>
             </div>
+
           </div>
-        ))}
+
+          {/* Blog List */}
+          {blogs.map((blog) => (
+
+            <div
+              key={blog.id}
+              className="flex flex-col md:flex-row gap-6 bg-gray-900 rounded-xl p-5 border border-gray-800 hover:border-blue-500 transition"
+            >
+
+              <img
+                src={blog.image}
+                alt={blog.title}
+                className="w-full md:w-60 h-40 object-cover rounded-lg"
+              />
+
+              <div className="flex flex-col justify-center">
+
+                <span className="text-xs text-blue-400 mb-2">
+                  {blog.category}
+                </span>
+
+                <h3 className="text-xl font-semibold mb-2">
+                  {blog.title}
+                </h3>
+
+                <p className="text-gray-400 text-sm mb-3">
+                  {blog.desc}
+                </p>
+
+                <button className="text-blue-400 flex items-center gap-2 hover:text-blue-300">
+                  Read Article <FaArrowRight />
+                </button>
+
+              </div>
+
+            </div>
+
+          ))}
+
+        </div>
+
       </div>
 
       {/* Footer */}
-      <div className="mt-20 text-center text-gray-500 text-sm border-t border-gray-800 pt-6">
-        © 2026 SuchiPlus. All Rights Reserved.
-      </div>
+      <div className="mt-20 text-center text-gray-500 text-sm border-t border-gray-800 pt-6 pb-10">
+© SuchiPlus, Copyright ©2026, First Track Solution Technologies. All rights reserved      </div>
+
     </div>
   );
 };

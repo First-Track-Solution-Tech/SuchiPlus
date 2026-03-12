@@ -6,6 +6,20 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white py-10 px-6 md:px-12">
       <div className="max-w-6xl mx-auto">
+
+        {/* Logo - Top Left */}
+        {/* Logo - Top Left */}
+<div className="mb-8">
+  <Link to="/">
+    <img
+      src="/images/Logo3.png"
+      alt="SuchiPlus Logo"
+      className="w-36 cursor-pointer"
+    />
+  </Link>
+</div>
+
+        {/* Footer Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           
           {/* Company */}
@@ -37,31 +51,28 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Social Icons */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              
               <a href="#" className="bg-gray-800 p-3 rounded-full hover:bg-blue-600 transition duration-300">
                 <FaFacebookF size={18} />
               </a>
-
               <a href="#" className="bg-gray-800 p-3 rounded-full hover:bg-sky-500 transition duration-300">
                 <FaTwitter size={18} />
               </a>
-
               <a href="#" className="bg-gray-800 p-3 rounded-full hover:bg-pink-600 transition duration-300">
                 <FaInstagram size={18} />
               </a>
-
             </div>
           </div>
 
         </div>
 
-        <div className="mt-12 text-center text-sm text-gray-500">
-          &copy; {new Date().getFullYear()} SuchiPlus. All rights reserved.
+        {/* Copyright */}
+        <div className="mt-12 text-sm text-gray-500">
+          &copy;  SuchiPlus, Copyright ©2026, First Track Solution Technologies. All rights reserved
         </div>
+
       </div>
     </footer>
   );

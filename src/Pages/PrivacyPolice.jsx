@@ -68,10 +68,6 @@ const PrivacyPolicy = () => {
             </p>
           </div>
         </div>
-
-        <p className="text-center text-sm text-gray-500 mt-6">
-          Effective Date: February 2026
-        </p>
       </div>
     </div>
   );

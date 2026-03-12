@@ -1,4 +1,5 @@
 import React from "react";
+import { FaMale, FaFemale } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -42,33 +43,30 @@ const About = () => {
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          
+
+          {/* Founder */}
           <div className="bg-gray-800 rounded-xl p-6 text-center hover:scale-105 transition duration-300 shadow-lg">
-            <img
-              src="/images/movie2.png"
-              alt="Founder"
-              className="w-24 h-24 mx-auto rounded-full mb-4 object-cover"
-            />
+            <div className="w-24 h-24 mx-auto rounded-full mb-4 flex items-center justify-center bg-gray-700 text-4xl text-pink-400">
+              <FaFemale />
+            </div>
             <h3 className="text-xl font-semibold">Sheetal</h3>
             <p className="text-gray-400 text-sm">Founder & CEO</p>
           </div>
 
+          {/* Developer */}
           <div className="bg-gray-800 rounded-xl p-6 text-center hover:scale-105 transition duration-300 shadow-lg">
-            <img
-              src="/images/movie3.png"
-              alt="Developer"
-              className="w-24 h-24 mx-auto rounded-full mb-4 object-cover"
-            />
+            <div className="w-24 h-24 mx-auto rounded-full mb-4 flex items-center justify-center bg-gray-700 text-4xl text-blue-400">
+              <FaMale />
+            </div>
             <h3 className="text-xl font-semibold">Suchi</h3>
             <p className="text-gray-400 text-sm">Lead Developer</p>
           </div>
 
+          {/* Designer */}
           <div className="bg-gray-800 rounded-xl p-6 text-center hover:scale-105 transition duration-300 shadow-lg">
-            <img
-              src="/images/movie4.png"
-              alt="Designer"
-              className="w-24 h-24 mx-auto rounded-full mb-4 object-cover"
-            />
+            <div className="w-24 h-24 mx-auto rounded-full mb-4 flex items-center justify-center bg-gray-700 text-4xl text-pink-400">
+              <FaFemale />
+            </div>
             <h3 className="text-xl font-semibold">Riya Patel</h3>
             <p className="text-gray-400 text-sm">UI/UX Designer</p>
           </div>
@@ -78,8 +76,7 @@ const About = () => {
 
       {/* Footer */}
       <div className="py-8 text-center border-t border-gray-800 text-gray-500 text-sm">
-        © 2026 SuchiPlus. All Rights Reserved.
-      </div>
+© SuchiPlus, Copyright ©2026, First Track Solution Technologies. All rights reserved      </div>
 
     </div>
   );

@@ -68,8 +68,7 @@ const FAQ = () => {
       </div>
 
       <div className="text-center text-gray-400 mt-16 text-sm">
-        © 2026 SuchiPlus. All Rights Reserved.
-      </div>
+© SuchiPlus, Copyright ©2026, First Track Solution Technologies. All rights reserved      </div>
     </div>
   );
 };

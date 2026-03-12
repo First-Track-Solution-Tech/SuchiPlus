@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CookiesPolicy = () => {
   const sections = [
@@ -67,15 +68,14 @@ const CookiesPolicy = () => {
         <p className="text-gray-300 mb-4">
           If you have any concerns about our Cookies Policy, feel free to reach out.
         </p>
-        <button className="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+        <Link to="/Contact" className="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700 transition">
           Contact Support
-        </button>
+        </Link>
       </div>
 
       {/* Footer */}
       <div className="mt-20 text-center text-gray-400 text-sm border-t border-gray-700 pt-6">
-        © 2026 SuchiPlus. All Rights Reserved.
-      </div>
+© SuchiPlus, Copyright ©2026, First Track Solution Technologies. All rights reserved      </div>
 
     </div>
   );

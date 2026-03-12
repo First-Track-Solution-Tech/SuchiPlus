@@ -24,7 +24,6 @@ const HelpCenter = () => {
         How can we help you today?
       </p>
 
-      {/* Search Box */}
       <div className="flex justify-center mb-14">
         <input
           type="text"
@@ -35,7 +34,6 @@ const HelpCenter = () => {
         />
       </div>
 
-      {/* Help Categories */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {topics
           .filter((topic) =>
@@ -56,7 +54,6 @@ const HelpCenter = () => {
           ))}
       </div>
 
-      {/* Support Section */}
       <div className="mt-20 text-center">
         <h2 className="text-2xl font-bold mb-4">
           Still Need Help?
@@ -72,8 +69,7 @@ const HelpCenter = () => {
 
       {/* Footer */}
       <div className="mt-20 text-center text-gray-500 text-sm border-t border-gray-800 pt-6">
-        © 2026 SuchiPlus. All Rights Reserved.
-      </div>
+© SuchiPlus, Copyright ©2026, First Track Solution Technologies. All rights reserved      </div>
 
     </div>
   );
