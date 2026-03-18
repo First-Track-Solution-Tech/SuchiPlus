@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const faqData = [
   "What is SuchiPlus?",
@@ -52,9 +53,10 @@ const FaqSection = () => {
             placeholder="Email address"
             className="flex-1 px-4 py-4 rounded bg-black border border-gray-500 text-white"
           />
-          <button className="bg-blue-800 px-8 py-4 rounded text-lg font-semibold hover:bg-blue-900">
+          <Link 
+          to="/Account" className="bg-blue-800 px-8 py-4 rounded text-lg font-semibold hover:bg-blue-900">
             Get Started →
-          </button>
+          </Link>
         </div>
       </div>
     </section>

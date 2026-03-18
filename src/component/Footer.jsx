@@ -59,8 +59,8 @@ const Footer = () => {
 
         </div>
 
-        <div className="mt-12 text-center text-sm text-gray-500">
-          &copy; {new Date().getFullYear()} SuchiPlus. All rights reserved.
+        <div className="mt-12 text-center text-sm text-gray-300">
+          &copy; {new Date().getFullYear()} SuchiPlus. Developed by First Track Solution Technologies. All rights reserved 
         </div>
       </div>
     </footer>

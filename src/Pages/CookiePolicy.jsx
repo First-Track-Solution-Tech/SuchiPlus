@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const CookiesPolicy = () => {
   const sections = [
     {
@@ -67,9 +67,10 @@ const CookiesPolicy = () => {
         <p className="text-gray-300 mb-4">
           If you have any concerns about our Cookies Policy, feel free to reach out.
         </p>
-        <button className="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+        <Link 
+        to ="/Contact" className="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700 transition">
           Contact Support
-        </button>
+        </Link>
       </div>
 
       {/* Footer */}

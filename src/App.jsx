@@ -5,6 +5,10 @@ import Signin from "./Pages/Signin";
 import Register from "./Pages/Register";
 import MainLayout from "./Layouts/MainLayouts";
 import Search from "./Pages/Search";
+import Movies from "./Pages/Movies";
+import TVShows from "./Pages/TVShows";
+import Downloads from "./Pages/Downloads";
+import Account from "./Pages/Account";
 
 import About from "./Pages/About";
 import Blog from "./Pages/Blog";
@@ -24,6 +28,10 @@ function App() {
         <Route path="/" element={<MainLayout />}>    
         <Route index element={<Home />} />
         <Route path="/Search" element={<Search />} />
+        <Route path="/movies" element={<Movies />} />
+        <Route path="/tvshows" element={<TVShows />} />
+        <Route path="/downloads" element={<Downloads />} />
+        <Route path="/Account" element={<Account />} />
 
         <Route path="/Signin" element={<Signin />} />
         <Route path="/Register" element={<Register />} />
