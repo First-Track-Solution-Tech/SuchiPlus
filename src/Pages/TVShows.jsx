@@ -33,7 +33,7 @@ const TVShows = () => {
       ],
     },
      {
-      title: "Sci-Fi Originals",
+      title: "Most Watches Drama",
       shows: [
         { id: 11, name: "Fantacy", image: "/images/wb6.png" },
         { id: 12, name: "SCI-FI", image: "/images/wb7.png" },
