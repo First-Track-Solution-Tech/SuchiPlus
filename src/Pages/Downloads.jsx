@@ -8,7 +8,7 @@ const Downloads = () => {
 
   if (!isSubscribed) {
     return (
-      <div className="min-h-screen flex items-center justify-center px-6 py-20 
+      <div className="min-h-screen flex items-center justify-center px-6 py-35 
       bg-gradient-to-br from-black via-gray-900 to-black text-white">
 
         <div className="max-w-2xl w-full text-center bg-white/5 backdrop-blur-lg 
@@ -59,7 +59,7 @@ const Downloads = () => {
 
           {/* Subscribe Button */}
           <Link
-            to="/subscription"
+            to="/Account"
             className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 
             px-10 py-3 rounded-lg text-lg font-semibold hover:scale-105 
             transition transform duration-300 shadow-lg"

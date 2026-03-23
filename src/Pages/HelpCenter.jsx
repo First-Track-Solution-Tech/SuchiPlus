@@ -14,7 +14,7 @@ const HelpCenter = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black to-blue-900 text-white px-6 pt-28">
+    <div className="min-h-screen bg-gradient-to-br from-black to-blue-900 text-white px-6 pt-35">
       
       <h1 className="text-4xl font-bold text-center mb-6">
         Help Center

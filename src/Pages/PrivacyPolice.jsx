@@ -3,7 +3,7 @@ import { Route } from "react-router-dom";
 
 const PrivacyPolicy = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black px-6 py-12">
+    <div className="min-h-screen bg-gradient-to-br from-black px-6 py-35">
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-extrabold text-center text-blue-800 mb-8">
           Privacy Policy
@@ -69,9 +69,6 @@ const PrivacyPolicy = () => {
           </div>
         </div>
 
-        <p className="text-center text-sm text-gray-500 mt-6">
-          Effective Date: February 2026
-        </p>
       </div>
     </div>
   );

@@ -57,7 +57,7 @@ const Account = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-20 px-6 text-white
+    <div className="min-h-screen pt-35 px-6 text-white
     bg-gradient-to-br from-black via-gray-900 to-black">
 
       {/* Title */}

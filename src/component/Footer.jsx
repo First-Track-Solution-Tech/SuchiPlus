@@ -6,6 +6,19 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white py-10 px-6 md:px-12">
       <div className="max-w-6xl mx-auto">
+
+        {/* Logo */}
+        <div className="mb-6 flex items-center space-x-3">
+          <Link to="/">
+            <img
+              src="/images/Logo.png"
+              alt="SuchiPlus Logo"
+              className="h-10 w-auto"
+            />
+          </Link>
+          
+        </div>
+
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           
           {/* Company */}
@@ -34,6 +47,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/PrivacyPolicy" className="hover:text-gray-400">Privacy Policy</Link></li>
               <li><Link to="/CookiePolicy" className="hover:text-gray-400">Cookie Policy</Link></li>
+              <li><Link to="/RefundCancellation" className="hover:text-gray-400">Refund & Cancellation</Link></li>
             </ul>
           </div>
 

@@ -2,7 +2,7 @@ import React from "react";
 
 const TermsOfService = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-indigo-900 via-black to-blue-800 px-6 py-16">
+    <div className="min-h-screen bg-gradient-to-r from-indigo-900 via-black to-blue-800 px-6 py-40">
       <div className="max-w-5xl mx-auto">
         
         {/* Header Section */}

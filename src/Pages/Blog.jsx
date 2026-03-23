@@ -35,7 +35,7 @@ const Blog = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white pt-24 px-6">
+    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-white pt-30 px-6">
 
       {/* Page Title */}
       <div className="text-center mb-14">

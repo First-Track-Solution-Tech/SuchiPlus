@@ -18,6 +18,7 @@ import HelpCenter from "./Pages/HelpCenter";
 import TermsOfService from "./Pages/TermsOfService";
 import PrivacyPolicy from "./Pages/PrivacyPolice";
 import CookiesPolicy from "./Pages/CookiePolicy";
+import RefundCancellation from "./Pages/RefundCancellation";
 import "./index.css";
 import "./App.css";
 function App() {
@@ -43,6 +44,7 @@ function App() {
         <Route path="/TermsOfService" element={<TermsOfService />} />
         <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
         <Route path="/CookiePolicy" element={<CookiesPolicy />} />
+        <Route path="/RefundCancellation" element={<RefundCancellation />} />
 
        </Route>  
        </Routes>

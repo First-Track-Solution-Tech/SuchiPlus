@@ -1,21 +1,21 @@
 import React, { useState } from "react";
 
 const movies = [
-  { id: 1, img: "/images/movie1.png", title: "Avatar" },
-  { id: 2, img: "/images/movie2.png", title: "Titanic" },
-  { id: 3, img: "/images/movie3.png", title: "Inception" },
-  { id: 4, img: "/images/movie4.png", title: "Interstellar" },
-  { id: 5, img: "/images/movie5.png", title: "Joker" },
-  { id: 6, img: "/images/movie6.png", title: "Avengers" },
-  { id: 7, img: "/images/movie7.png", title: "Spider Man" },
-  { id: 8, img: "/images/movie8.png", title: "Doctor Strange" },
-  { id: 9, img: "/images/movie9.png", title: "Black Panther" },
-  { id: 10, img: "/images/movie10.png", title: "Iron Man" },
-  { id: 11, img: "/images/movie1.png", title: "Thor" },
-  { id: 12, img: "/images/movie2.png", title: "Hulk" },
-  { id: 13, img: "/images/movie3.png", title: "Captain America" },
-  { id: 14, img: "/images/movie4.png", title: "Guardians" },
-  { id: 15, img: "/images/movie5.png", title: "Deadpool" },
+  { id: 1, img: "/images/movie1.png", title: "No Time To Die" },
+  { id: 2, img: "/images/movie2.png", title: "Spider Man" },
+  { id: 3, img: "/images/movie3.png", title: "KGF" },
+  { id: 4, img: "/images/movie4.png", title: "Jurassic World" },
+  { id: 5, img: "/images/movie5.png", title: "BATMAN" },
+  { id: 6, img: "/images/movie6.png", title: "Extraction" },
+  { id: 7, img: "/images/movie7.png", title: "Sooryavanshi" },
+  { id: 8, img: "/images/movie8.png", title: "Jawan" },
+  { id: 9, img: "/images/movie9.png", title: "John Wick" },
+  { id: 10, img: "/images/movie10.png", title: "Mission Impossible" },
+  { id: 11, img: "/images/movie20.jpg", title: "X-MEN" },
+  { id: 12, img: "/images/movie21.jpg", title: "Iron Man" },
+  { id: 13, img: "/images/movie26.jpg", title: "Animal" },
+  { id: 14, img: "/images/movie27.jpg", title: "Singham" },
+  { id: 15, img: "/images/movie24.jpg", title: "Pathaan" },
 ];
 
 const Search = () => {
@@ -30,7 +30,7 @@ const Search = () => {
         );
 
   return (
-    <div className="min-h-screen bg-black text-white pt-28 px-6">
+    <div className="min-h-screen bg-black text-white pt-35 px-6">
       {/* Title */}
       <h1 className="text-3xl font-bold text-center mb-6">Search Movies</h1>
 

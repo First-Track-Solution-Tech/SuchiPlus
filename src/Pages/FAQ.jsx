@@ -36,7 +36,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-blue-800 to-blue-950 text-white px-6 pt-28">
+    <div className="min-h-screen bg-gradient-to-br from-black via-blue-800 to-blue-950 text-white px-6 pt-35">
       
       <h1 className="text-4xl font-bold text-center mb-12">
         Frequently Asked Questions
