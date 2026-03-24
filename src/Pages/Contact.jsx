@@ -83,7 +83,8 @@ const Contact = () => {
             type="submit"
             className="w-full bg-gradient-to-r from-blue-600 to-purple-600 py-3 rounded-lg hover:opacity-90 transition duration-300 font-semibold"
           >
-            Send Message
+            Send Messages
+  
           </button>
         </form>
       </div>
